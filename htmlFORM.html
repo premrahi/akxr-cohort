@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <HEAD>
+        <TITLE>HTML FORMS</TITLE>
+    </HEAD>
+    <BODY>
+
+        <h1> html form </h1>
+
+        <form>
+            <label for="username"> naam likh apna:</label>
+            <input type="text" id="username" name="username" placeholder="username" required>
+            <br>
+            <label for="email">email likh apna:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="phone">mobile no. likh:</label>
+            <input type="number" id="phone" name="phone" required>
+            <br>
+            <label for="password">ab password daal:</label>
+            <input type="password" id="password" name="password" required>
+
+            <p>radio button</p>
+
+
+            <input type="radio" name="age" value="0-25" id="option-1">
+            <label for="option-1">0-25</label>
+            <br>
+            <input type="radio" name="age" value="26-50" id="option-2">
+            <label for="option-2">26-50</label>
+            <br> 
+            <input type="radio" name="age" value="51+" id="option-3">
+            <label for="option-3">51+</label>
+
+            <br><br><br>
+
+            <p>
+                dropdown box
+            </p>
+            <label for="security"> select security question :</label>
+            <select name="security" id="security">
+                <option value="1st">what is name of your pet?</option>
+                <option value="2st">kadhai paneer / malai chaap?</option>
+                <option value="3st">bus , car , bike what do you prefer?</option>
+            </select>
+            <br>
+            <label for="ans">write your answer:</label>
+            <input type="text" name="ans" id="ans">
+            <br><br><br>
+            <label for="bio">enter your bio: </label>
+            <br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="about you..."></textarea>
+
+            <br>
+            <br>
+
+            <input type="submit" name="submit" id="submit" value="submit the form">
+
+        </form>
+
+    </BODY>
+</html>
