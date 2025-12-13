@@ -1,0 +1,40 @@
+h1{
+    color:pink;
+    font-size: 25px;
+    font-family: arial;
+    text-shadow: 2px 2px slategray;
+    text-align: center;
+    text-decoration: underline;
+}
+p{
+    font-family: arial;
+    line-height: 25px;
+    color:slategrey;
+    column-count: 5;
+    column-gap: 30px;
+}
+ul{
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: aqua; */
+    border: 4px dashed crimson;
+}
+li{
+    list-style-type: square ;
+     
+    text-shadow: 1px 1px slategray;
+}  
+
+/*inline element*/
+
+span{
+    display: block;
+    margin: 20px;
+    padding: 20px;
+}
+
+div{
+     display: inline;
+    margin: 20px;
+    padding: 20px;
+}
