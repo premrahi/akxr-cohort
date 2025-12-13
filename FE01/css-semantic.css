@@ -1,0 +1,153 @@
+body ,ul li,a,h1 ,h2 ,img{
+    margin: 0 ;
+    padding: 0;
+    font-family: Arial;
+}
+header{
+    position: fixed;
+    padding: 20px;
+    text-align: center ;
+    width: 100%;
+    background-color: hwb(34 0% 0%);
+    z-index: 1;
+    left: 0;
+    top: 0;
+}
+header h1{
+    text-align: center;
+    color: white;
+    border: 9px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 49px;
+}
+
+
+
+.banner{
+    position: relative;
+}
+.banner img{
+    width: 100%;
+}
+.banner .welcome{
+    position: absolute;
+    padding: 30px;
+    left:10%;
+    top: 30%;
+}
+.banner .welcome h2{
+    position: absolute;
+    color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+}
+.banner .welcome h2 span{
+    color:rgb(205, 205, 244);
+    font-size: 1.5em;
+}
+nav{
+    padding: 20px;
+    background-color:#f4f4f4;
+    position: sticky;
+    top: 123px;
+    padding: 20px;
+   
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li {
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color : slategray
+}
+
+nav li a.join{
+    color :red; 
+}
+
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin:80px auto ;
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+main h2{
+    color:slategray;
+    font-size: 50px;
+    line-height: 1.5em;
+}
+main article{
+    line-height: 2em;
+    font-size: large;
+}
+main span{
+    position: relative;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+}
+main ul{
+    list-style-type: none;
+}
+main img{
+    width:700px ;
+    text-align: center;
+    margin: 40px 0 ;
+     white-space: nowrap;
+
+}
+
+.image li{
+    display: inline-block;
+    width : 30% ;
+    margin : 16px;
+     white-space: nowrap;
+}
+
+.image li img{
+    max-width: 100%;
+    white-space: nowrap;
+}
+.image li img.alu{
+    width:80%;
+}
+
+.join{
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    font-size: 20px;
+}
+.join h2{
+    font-size: 24px;
+
+}
+
+form input{
+    margin:20px 0;
+    padding: 10px 20px ;
+    text-align: center;
+    font-size: 24px;
+    border: 3px solid white;
+    border-radius: 24px;
+}
+
+button{
+    font-size: 24px;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+footer{
+    text-align: center;
+}
