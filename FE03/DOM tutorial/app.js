@@ -39,4 +39,56 @@ books.forEach(item => {
     item.textContent += ' (aalu wala samosa)'
 })
 
+// const booklist = document.querySelector('#book-list')
+
+const banner = document.querySelector('#page-banner')
+console.log('#page-banner node name is :',banner.nodeName)
+console.log('#page-banner node type is :',banner.nodeType)
+
+console.log('#page banner has child :',banner.hasChildNodes())
+
+
+// how to clone a node
+const clonebanner =  banner.cloneNode(true) ;
+console.log(clonebanner);
+
+
+//traversing 
+// parent and child
 const booklist = document.querySelector('#book-list')
+
+console.log(booklist.parentElement)
+console.log(booklist.parentNode)
+
+console.log(booklist.childNodes)
+console.log(booklist.children)
+
+//sibling to sibling
+
+// .nextSibling
+// .nextElementSibling
+console.log('next sibling is :' , booklist.nextSibling) ;
+console.log('next sibling is :' , booklist.nextElementSibling) ;
+
+//.previousSibling and .previousElementSibling
+console.log('previous sibling is: ' , booklist.previousSibling)
+console.log('previous sibling is: ' , booklist.previousElementSibling)
+
+
+//event listener
+var h2 = document.querySelector('#book-list h2')
+console.log(h2)
+h2.addEventListener('click' , function(e) {
+  console.log(e.target) ;
+  console.log(e) ; 
+})
+
+// code for deleting 
+var btn = document.querySelectorAll('#book-list .delete')
+
+Array.from(btn).forEach(function(btn){
+  btn.addEventListener('click', function(e){
+    const li = e.target.parentElement ;
+    li.parentNode.removeChild(li) ;
+  })
+})
